@@ -3,11 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Harshita's Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
 
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #161b22;
+        }
+
+        header .logo {
+            font-size: 24px;
+            color: #00ff6a;
+            font-weight: bold;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #c9d1d9;
+            font-size: 16px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            position: relative;
+        }
+
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #00ff6a;
+            margin-bottom: 20px;
+        }
+
+        .hero p.small-text {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p.big-text {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: 2px solid #00ff6a;
+            border-radius: 5px;
+            background-color: transparent;
+            color: #00ff6a;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #00ff6a;
+            color: #161b22;
+        }
+
+        .skills {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .skills h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            padding: 10px 20px;
+            background-color: #161b22;
+            border-radius: 5px;
+            color: #00ff6a;
+            font-size: 14px;
+        }
+
+        .projects {
+            padding: 50px 20px;
+        }
+
+        .projects h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .project-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .project {
+            background-color: #161b22;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #161b22;
+        }
+
+        .contact h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #00ff6a;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #00ff6a;
+            border-radius: 5px;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+
+        .contact form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #00ff6a;
+            color: #161b22;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background-color: #00d05a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #161b22;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #00ff6a;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-<h1> harshita </h1>
+    <header>
+        <div class="logo">Harshita's Portfolio</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <img src="square formal - Copy.jpg" alt="Harshita's Profile Picture">
+        
+        <h1>Hello, I am Harshita</h1>
+        
+        <p>I am a creative and tech-savvy individual passionate about UI/UX design, development, and data visualization. I love blending technology with design to build user-friendly experiences.</p>
+        <button class="btn">Let's get in touch!</button>
+    </div>
+
+    <section id="skills" class="skills">
+        <h2>Skills and Tools</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PostgreSQL</li>
+            <li>Figma</li>
+            <li>Lightroom</li>
+            <li>C</li>
+            <li>Python</li>
+            <li>MySQL</li>
+            <li>Matplotlib</li>
+            <li>Pandas</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-gallery">
+            <div class="project">
+                <p>Project 1</p>
+            </div>
+            <div class="project">
+                <p>Project 2</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Harshita. All rights reserved.</p>
+        <p><a href="https://linkedin.com">LinkedIn</a> | <a href="https://instagram.com">Instagram</a> | <a href="https://github.com">GitHub</a></p>
+    </footer>
 </body>
 </html>
-
